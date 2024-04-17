@@ -1,3 +1,6 @@
 pool: MyAgentPool
 steps:
 - bash: echo hello world
+- task: SonarCloudAnalyze@1
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
